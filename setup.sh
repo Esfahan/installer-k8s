@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# docker
-sudo cp yum.repos.d/docker.repo /etc/yum.repos.d/docker.repo
-sudo yum install -y docker-engine
-sudo systemctl start docker
-sudo systemctl enable docker
+# submodule
+./installer-docker/setup.sh
 
 # minikube
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
