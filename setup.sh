@@ -16,4 +16,6 @@ export MINIKUBE_HOME=/root
 export CHANGE_MINIKUBE_NONE_USER=true
 export KUBECONFIG=/root/.kube/config
 
+sudo yum install -y socat
+
 sudo /usr/local/bin/minikube start --vm-driver=none
